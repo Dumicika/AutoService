@@ -11,4 +11,7 @@ class OwnerController extends Controller
         $owners = Owner::all();
         return view('owners.index', ['owners' => $owners]);
     }
+    public function create(){
+        return view('owners.create');
+    }
 }
