@@ -14,4 +14,14 @@ class Car extends Model
         'mechanic_id'
     ];
 
+    public function mechanic()
+    {
+        return $this->belongsTo(Mechanic::class);
+    }
+
+    public function owner()
+    {
+        return $this->hasOne(Owner::class);
+    }
+
 }
