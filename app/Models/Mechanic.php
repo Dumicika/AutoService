@@ -10,6 +10,11 @@ class Mechanic extends Model
     use HasFactory;
     protected $fillable = [
         'id',
-        'name'
+        'name',
     ];
+
+    public function cars()
+    {
+        return $this->hasMany(Car::class);
+    }
 }

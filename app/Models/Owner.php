@@ -13,4 +13,9 @@ class Owner extends Model
         'name',
         'car_id'
     ];
+
+    public function car()
+    {
+        return $this->belongsTo(Car::class);
+    }
 }
