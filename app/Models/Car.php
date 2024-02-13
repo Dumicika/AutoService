@@ -11,6 +11,7 @@ class Car extends Model
     protected $fillable = [
         'id',
         'model'
+        
     ];
 
 }
